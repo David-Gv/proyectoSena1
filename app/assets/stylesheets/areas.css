@@ -1,6 +1,71 @@
+:root {
+    --primario: #251E17;
+    --secundario: #FF8138;
+    --terciario: #669900;
+    --blanco: #FFF;   
+    --negro: #000;
+}
 
 
 
+/* contenido principal */
+.contenedorAreas {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    height: 450px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+
+
+/* menu */
+.menuAreas  {
+    border: solid 1px black;
+    width: 250px;
+    height: 450px;
+}
+.menuAreas__titulo  {
+    border: 1px solid rgb(38, 0, 255);
+    height: 40px;
+    text-align: center;
+}
+.menuAreas__titulo h2 {
+    margin-top: 4px;
+}
+.menuAreas__lista li {
+    height: 25px;
+    margin-left: -40px;
+    border: solid 1px rebeccapurple;
+    margin-top: 30px;
+    list-style: none;
+    text-align: center;
+}
+.menuAreas__volver {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 300px;
+    text-align: center;
+}
+.menuAreas__volver:hover{
+    background-color: var(--secundario);
+}
+
+
+
+/* informacion */
+.informacion {
+    border: solid 1px black;
+    height: 450px;
+    width: 100%;
+}
+
+
+
+
+
+/* anterior css */
 
 .main-areas{
     width: 100%;
@@ -10,20 +75,16 @@
     margin-top: 5px;
     margin-bottom: 50px;
 }
-
 .container-lista-areas{
     border: solid 1px black;
     width: 250px;
     height: 450px;
 }
-
-
 #titulo-menu-areas{
     border: 1px solid rgb(38, 0, 255);
     height: 40px;
     text-align: center;
 }
-
 .h2-areas{
 margin-top: 4px;
 }

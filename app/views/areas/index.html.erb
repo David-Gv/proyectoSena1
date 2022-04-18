@@ -7,7 +7,9 @@
 
 <body class ="container-areas">
      <nav class= "navegacion">
-        <section class="navegacion__logo"><%= image_tag("logoPrincipa.png", width: "80", height: "70")%></section>
+        <section 
+            class="navegacion__logo"><%= image_tag("logoPrincipa.png", width: "80", height: "70")%>
+        </section>
         <section class="navegacion__boton">
             <div class="navegacion__textoBoton">
                 <%= link_to "Salir", destroy_user_session_path, :method => :delete %>
@@ -15,32 +17,30 @@
         </section>
     </nav> 
     
-    <main class= "main-areas">
-        <section class="container-lista-areas">
-            <div id="titulo-menu-areas">
-                <h2 class= "h2-areas">Fichas</h2>
+    <main class= "contenedorAreas">
+        <section class="menuAreas">
+            <div class="menuAreas__titulo">
+                <h2>Areas</h2>
             </div>
-            <div id="Menu">
-                <ul class="lista-areas">
-                    <li class="lista-areas-1"><%= link_to "Nueva Area", new_area_path, :method => :get %></li>
-                   
+            <div class="menuAreas__lista">
+                <ul>
+                    <li><%= link_to "Nueva Area", new_area_path, :method => :get %></li>
                 </ul>
-            </div>
-            <div class ="volver-areas">
+            </div> 
+            <div class ="menuAreas__volver">
                 <%= link_to "Volver", home_index_path, :method => :get %>
             </div>
         </section>
 
-        <section class="index-informacion-areas">
+        <section class="informacion">
             <table border 1px>
                 <tr>
                     <th>Codigo De Area</th>
                     <th>Nombre De Area</th>
                     <th colspan="4" >Opciones</th>
                 </tr>
-            <%= render @areas %>
+                <%= render @areas %>
             </table>
-        </section>
-        
+        </section> 
     </main>
 </body>
