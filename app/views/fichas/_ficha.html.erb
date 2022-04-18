@@ -1,0 +1,12 @@
+<tr>
+
+<td><%= link_to ficha.nombre_fic, ficha_path(ficha.id) %></td>
+
+<td><%= link_to 'Eliminar', ficha,
+              data: {
+                "turbo-method": :delete,
+                
+              } %></td>
+  
+
+<tr>

@@ -1,3 +1,4 @@
+
 <head>
     <script src="https://kit.fontawesome.com/594d98509e.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag "normalize" %>
@@ -13,8 +14,7 @@
                 <%= link_to "Salir", destroy_user_session_path, :method => :delete %>
             </div>
         </section>
-    </nav> 
-    
+    </nav>
     <main class= "main-areas">
         <section class="container-lista-areas">
             <div id="titulo-menu-areas">
@@ -22,7 +22,7 @@
             </div>
             <div id="Menu">
                 <ul class="lista-areas">
-                    <li class="lista-areas-1"><%= link_to "Nueva Area", new_area_path, :method => :get %></li>
+                    <li class="lista-areas-1"><%= link_to "Nueva ficha", new_ficha_path, :method => :get %></li>
                    
                 </ul>
             </div>
@@ -34,11 +34,11 @@
         <section class="index-informacion-areas">
             <table border 1px>
                 <tr>
-                    <th>Codigo De Area</th>
-                    <th>Nombre De Area</th>
-                    <th colspan="4" >Opciones</th>
+                    <th>Nombre De ficha</th>
+                   
                 </tr>
-            <%= render @areas %>
+                <%= render @fichas %>
+            
             </table>
         </section>
         

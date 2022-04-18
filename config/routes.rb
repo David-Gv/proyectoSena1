@@ -1,4 +1,5 @@
 Rails.application.routes.draw do 
+  
   root to: "home#index"
   devise_for :users, controllers: {
     sessions: 'users/sessions'
@@ -11,10 +12,8 @@ Rails.application.routes.draw do
   resources :areas do
     resources :programas, module: :areas
   end 
-
-  resources :programas do
-    resources :fichas, module: :programas
-  end
+  resources :fichas 
+  
  
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

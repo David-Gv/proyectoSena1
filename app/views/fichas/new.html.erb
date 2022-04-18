@@ -1,6 +1,5 @@
 <head>
     <script src="https://kit.fontawesome.com/594d98509e.js" crossorigin="anonymous"></script>
-    <%= stylesheet_link_tag "normalize" %>
     <%= stylesheet_link_tag "areas" %>
 
 </head>
@@ -13,34 +12,25 @@
                 <%= link_to "Salir", destroy_user_session_path, :method => :delete %>
             </div>
         </section>
-    </nav> 
-    
+    </nav>
     <main class= "main-areas">
         <section class="container-lista-areas">
             <div id="titulo-menu-areas">
-                <h2 class= "h2-areas">Fichas</h2>
+                <h2 class= "h2-areas">Nueva Ficha</h2>
             </div>
             <div id="Menu">
                 <ul class="lista-areas">
-                    <li class="lista-areas-1"><%= link_to "Nueva Area", new_area_path, :method => :get %></li>
-                   
                 </ul>
             </div>
             <div class ="volver-areas">
-                <%= link_to "Volver", home_index_path, :method => :get %>
+                <%= link_to "Volver", fichas_path, :method => :get %>
             </div>
         </section>
 
         <section class="index-informacion-areas">
-            <table border 1px>
-                <tr>
-                    <th>Codigo De Area</th>
-                    <th>Nombre De Area</th>
-                    <th colspan="4" >Opciones</th>
-                </tr>
-            <%= render @areas %>
-            </table>
+            <%= render "form" %>
         </section>
+        
         
     </main>
 </body>

@@ -19,9 +19,17 @@
             <div class="menu__titulo">
                 <h2>Administrador</h2>
             </div>
+
+            <div id="Menu">
+                <ul class="Home-Listas">
+                    <li class="lista-home-1"><%= link_to "Areas", areas_path, :method => :get %></li>
+                    <li class="lista-home-1"><%= link_to "fichas",  fichas_path %></li> 
+                    <li class="lista-home-1"></li>
+
             <div class="menu__lista">
                 <ul>
                     <li><%= link_to "Areas", areas_path, :method => :get %></li>
+
                 </ul>
             </div>
         </section>
